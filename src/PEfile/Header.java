@@ -208,7 +208,7 @@ public class Header implements Cloneable, BinaryRecord {
      */
         public void dumpOptionalHeader(PrintStream out){
         
-        out.println("Magic = 0x" + magic);
+        out.println("Magic = 0x" + Integer.toHexString(magic));
         out.println("MajorLinkerVersion = 0x" + Integer.toHexString(majorLinkerVersion));
         out.println("MinorLinkerVersion = 0x" + Integer.toHexString(minorLinkerVersion));
         out.println("SizeOfCode = 0x" + Long.toHexString(sizeOfCode));
